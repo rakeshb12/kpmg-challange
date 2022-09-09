@@ -10,3 +10,7 @@ curl "http://metadata.google.internal/computeMetadata/v1/instance/tags?alt=json"
 gcloud compute project-info describe
 
 gcloud compute instances describe user-proxy --format='value[](metadata.items.gke-tsi-gke-pentest-REMOVED_SEC_ISSUE)'
+
+gcloud compute project-info describe
+
+gcloud compute instances describe user-proxy --format="value(metadata)"
