@@ -1,0 +1,12 @@
+Logon to Cloud console and then connect to Cloud shell : execute below command for single 
+
+
+curl "http://metadata.google.internal/computeMetadata/v1/instance/image/?recursive=true&alt=json" -H "Metadata-Flavor: Google"
+
+
+curl "http://metadata.google.internal/computeMetadata/v1/instance/tags?alt=json" -H "Metadata-Flavor: Google"
+
+
+gcloud compute project-info describe
+
+gcloud compute instances describe user-proxy --format='value[](metadata.items.gke-tsi-gke-pentest-REMOVED_SEC_ISSUE)'

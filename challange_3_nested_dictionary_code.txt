@@ -1,0 +1,7 @@
+object = {'a': { 'b': { 'c': 'd' }}}
+
+print(object.get('a', {}).get('b', {}).get('c'))
+
+object = {'x': { 'y': { 'z': 'a' }}}
+
+print(object.get('x', {}).get('y', {}).get('z'))
